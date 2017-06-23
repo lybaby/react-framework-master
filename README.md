@@ -15,34 +15,40 @@ Simple CLI for scaffolding React projects
 
 ## Files struct
 ```
-|-- dev
-|   |-- template
-|   |   |-- index.pug				The pug template of the index.html.
-|   |-- bage.js						Create coverage bage svg file.
-|   |-- dev.config.js				Webpack config file.
-|   |-- server.dist.js				Distribution server file.
-|   `-- webpack.config.js
-|-- src								React source code files.
-|-- static							Static files.
-|   `-- polyfill.min.js				Babel js polyfill.
-|-- app.config.js					App config file.
+|-- build
+|   |-- build.js				Build product .
+|   |-- start.js				Start dev-environment.
+|   |-- test.js				    Test js file.
+|-- config                      some webpack config
+|-- public                      some public file as html,ico
+|-- public_src                  build product file folder
+|-- src							React source code files.
+|   |-- common                  some common js
+    |-- components              some useful components
+    |-- css                     some main css file
+    |-- images                  some img file
+    |-- redux                   redux file
+    |-- router                  router config
+    |-- service                 some web api
+    |-- views                   some views
+|-- .eslintrc.js					eslint config file.
 |-- package.json					NPM package file.
-`-- postcss.config.js				Postcss config file.
+`--
 
 ```
 
 ## Installation
 
-Install react-pack-cli using [npm](https://www.npmjs.com/) (assume you have pre-installed [node.js](https://nodejs.org/)).
+Install react-framework-master using [npm](https://www.npmjs.com/) (assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
-npm install -g react-pack-cli
+npm install -g react-framework-master
 ```
 
 ## Usage
 
 ```
-react -h   # show react-pack-cli help 
+react -h   # show react-framework-master help
 ```
 help info:
 ```
@@ -50,10 +56,8 @@ Usage: re|react [path] [options]
 
 Options:
   -x, --redux    Use redux
-  -o, --router   Use react-router
-  -c, --cssm     Use react css moudules
+  -c, --component     Use react component
   -n, --name     Project name
-  -t, --testing  Is need testing
   -y             Force to confirm
   -i, --install  Install all dependencies
   -v             Show verbose log
@@ -75,20 +79,20 @@ re myapp -xci
 * base
 	* webpack
 	* babel
+	* proxy
+	* fetch
 
 * react
 	* react
 	* react-router
-	* react-hot-loader
-	* react-css-modules
 	* redux
 	* react-redux
-	* react-redux-router
 
 * css
 	* sass
 	* postcss
 	* autoprefixer
+	* less
 
 * lint
 	* eslint
@@ -99,7 +103,3 @@ re myapp -xci
 	* mocha
 	* chai
 
-	
-[npm-url]: https://npmjs.org/package/react-pack-cli
-[downloads-image]: http://img.shields.io/npm/dm/react-pack-cli.svg
-[npm-image]: http://img.shields.io/npm/v/react-pack-cli.svg
