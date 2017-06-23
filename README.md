@@ -47,11 +47,11 @@ npm install -g react_9f_cli
 ## Usage
 
 ```
-react -h   # show react_9f_cli help
+frame -h   # show react_9f_cli help
 ```
 help info:
 ```
-Usage: re|react [path] [options]
+Usage: frame|framework [path] [options]
 
 Options:
   -x, --redux    Use redux
