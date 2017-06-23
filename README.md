@@ -1,4 +1,4 @@
-#React Pack CLI 
+#React Framework CLI
 
 Simple CLI for scaffolding React projects 
 
@@ -10,7 +10,7 @@ Simple CLI for scaffolding React projects
 * ES7 support
 * Hot reload
 * Testing support
-* Free combination modules (redux/router/cssMoudules)
+* Free combination modules (redux/router/some component/eslint/test)
 
 
 ## Files struct
