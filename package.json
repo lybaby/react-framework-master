@@ -1,7 +1,7 @@
 {
   "name": "react_9f_cli",
   "repository": "react_9f_cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CLI for scaffolding React projects",
   "main": "index.js",
   "scripts": {
