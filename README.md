@@ -1,8 +1,7 @@
 #React Framework CLI
 
 Simple CLI for scaffolding React projects 
-
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+npm 5.03
 
 ## Features
 
@@ -39,16 +38,16 @@ Simple CLI for scaffolding React projects
 
 ## Installation
 
-Install react-framework-master using [npm](https://www.npmjs.com/) (assume you have pre-installed [node.js](https://nodejs.org/)).
+Install react-9f-cli using [npm](https://www.npmjs.com/) (assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
-npm install -g react-framework-master
+npm install -g react_9f_cli
 ```
 
 ## Usage
 
 ```
-react -h   # show react-framework-master help
+react -h   # show react_9f_cli help
 ```
 help info:
 ```
