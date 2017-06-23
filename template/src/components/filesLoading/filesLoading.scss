@@ -1,0 +1,45 @@
+.files-Loading{
+  text-align: center;
+}
+.loading-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loading-wrap {
+  display: inline-block;
+  position: absolute;
+  padding: .5em;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 1.5em;
+  vertical-align: bottom;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+.svg-block{
+  position: relative;
+  text-align: center;
+}
+.progress-cicle-text{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  line-height: 100px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.3);
+}

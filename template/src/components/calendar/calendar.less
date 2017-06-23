@@ -1,0 +1,52 @@
+.calendar {
+	min-width: 210px;
+	width: 100%;
+	background-color: white;
+
+	.week {
+		background-color: #f7f7f7;
+		line-height: 1.5em;
+	}
+
+	span {
+		display: inline-block;
+		width: 14.2857%;
+		text-align: center;
+	}
+
+	.year {
+		line-height: 1.5em;
+
+		.month {
+			width: 71.4285%;
+		}
+	}
+	
+	.dates {
+		span {
+			width: 28px;
+			height: 28px;
+			margin: 1px;
+			line-height: 28px;
+			border-radius: 50%;
+			border: 1px solid white;
+			font-size: 0.8em;
+		}
+		
+		span.selected {
+			border-color: red;
+		}
+
+		span.today {
+			font-weight: bold;
+			color: blue;
+		}
+
+		.previous-month, .next-month {
+			color: gray;
+		}
+	}
+}
+.calendar.hide {
+	display: none;
+}

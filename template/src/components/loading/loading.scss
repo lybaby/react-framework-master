@@ -1,0 +1,59 @@
+.loading-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loading-wrap {
+  position: absolute;
+  padding: .5em;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 1.5em;
+  vertical-align: bottom;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+
+.loading {
+  display: inline-block;
+  b {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.2em;
+    width: 1.2em;
+    text-align: center;
+  }
+
+  span {
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+    //min-width: 6.5em;
+    padding: 0 1em 0 .8em;
+  }
+}
+
+.stop-btn {
+  position: relative;
+  display: inline-block;
+  float: right;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.btn-line {
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 6;
+}

@@ -1,0 +1,36 @@
+
+.date-selector {
+	display: inline-block;
+	position: relative;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+
+	.calendar-container {
+		position: absolute;
+		z-index: 999;
+		margin-left: -1px;
+		border: 1px solid #ccc;
+		width: 212px;
+		background-color: white;
+
+		*, *:before, *:after {
+			box-sizing: border-box;
+		}
+		
+		.buttons {
+			text-align: center;
+			padding: 0.25em 0;
+			
+			.button {
+				display: inline-block;
+				padding: 0.15em 0.25em 0.25em 0.25em;
+				margin: 0 0.25em;
+				background-color: blue;
+				color: white;
+			}
+		}
+	}
+	.calendar-container.hide {
+		display: none;
+	}
+}

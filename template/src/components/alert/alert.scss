@@ -1,0 +1,119 @@
+$fontSize_14: .14rem;
+$contentFontSize: .15rem;
+$buttonFontSize: .16rem;
+$titleFontSize: .18rem;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+
+.dialog {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  background-color: #f0f2f9;
+  width: 60%;
+  top: 35%;
+  left: 50%;
+  margin-left: -30%;
+  border-radius: .08rem;
+  color: #333333;
+  padding-bottom: 4*$buttonFontSize;
+
+}
+
+.dialog-title {
+
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  background-color: #f0f2f9;
+  width: 60%;
+  padding-top: 2.5*$titleFontSize;
+  padding-bottom: 4*$buttonFontSize;
+  top: 35%;
+  left: 50%;
+  margin-left: -30%;
+  border-radius: .08rem;
+  color: #333333;
+
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 2.5em;
+  line-height: 3em;
+  font-size: $titleFontSize;
+
+  .close {
+    position: absolute;
+    width: 0;
+    height: 0;
+    //background: url('../../images/close.png') no-repeat;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    opacity: 0.6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  line-height: 1.5em;
+  padding: .3em 1em 1em;
+  font-size: $contentFontSize;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+
+  .cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: $buttonFontSize;
+  text-align: center;
+  padding: .1rem 0 .15rem;
+  //border-top: .01rem solid #cccccc;
+  button {
+    width: 85%;
+    //height: 2.5em;
+    //line-height: 2.5em;
+    color: #fff;
+    background-color: #eb333b;
+    border-radius: .05rem;
+  }
+}
+
+//@import '../css/var';
+
+@media all and (min-width: 1200px) {
+  .dialog {
+    width: 800px;
+    margin-left: -400px;
+  }
+}
