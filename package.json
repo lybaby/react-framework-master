@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "re": "index.js",
-    "react": "index.js"
+    "frame": "index.js",
+    "framework": "index.js"
   },
   "author": "",
   "license": "ISC",
