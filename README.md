@@ -67,7 +67,7 @@ The `react` command have a alias `re`.
 ### Example
 
 ```
-re myapp -xci 
+frame myapp -xci 
 ```
 1. Create a react app under **myapp** directory.
 2. It's use `redux` , `css moudules` libraries. 
