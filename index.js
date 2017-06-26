@@ -191,7 +191,7 @@ class Main {
                 return console.error(err);
             }
         });
-        fss.copy(templatePath('./src/views/home'), destPath('./src/views/home'), (err) => {
+        fss.copy(templatePath('./src/views/testing'), destPath('./src/views/testing'), (err) => {
             if (err) {
                 return console.error(err);
             }
@@ -199,7 +199,7 @@ class Main {
     }else {
         copy('src/router/router.jsx', 'src/router/router.jsx');
         copy('src/app.jsx', 'src/app.jsx');
-        fss.copy(templatePath('./src/views/testing'), destPath('./src/views/testing'), (err) => {
+        fss.copy(templatePath('./src/views/home'), destPath('./src/views/home'), (err) => {
             if (err) {
                 return console.error(err);
             }
