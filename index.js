@@ -197,7 +197,7 @@ class Main {
     }
 
 
-
+    copy('src/registerServiceWorker.js', 'src/registerServiceWorker.js');
     // copy index.jsx
     copy('src/index.js', 'src/index.js');
   }
