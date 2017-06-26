@@ -98,7 +98,5 @@ frame myapp -xci
     * stylelint
 
 * testing
-	* karma
-	* mocha
-	* chai
+	* jest
 
