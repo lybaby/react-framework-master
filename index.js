@@ -36,7 +36,7 @@ const copyTpl = (opt, from, to = from) => {
   fs.copyTpl(templatePath(from), destPath(to), opt);
 };
 
-const appInfo = ({ name, redux,component }) => {
+const appInfo = ({ name, redux,component,testing }) => {
   const s = (value, msg) => value ? chalk.green(`+ ${msg}`) : chalk.gray(`- ${msg}`);
   return `Please confirm your App's info.
 ---------------------------------
@@ -45,6 +45,7 @@ const appInfo = ({ name, redux,component }) => {
   Modules  : 
     ${s(redux, 'x  Redux')}
     ${s(component, 'x Component')}
+    ${s(testing, 'x Test jest')}
 ---------------------------------
   Are you sure?`;
 };
@@ -168,7 +169,7 @@ class Main {
 
   copyReactSource() {
     copy('src/css');
-    const { redux, component } = this.props;
+    const { redux, component, testing } = this.props;
     console.log(this.props);
 
     if (redux) {
@@ -206,6 +207,13 @@ class Main {
         });
     }
 
+    if(testing){
+        fss.copy(templatePath('./src/test'), destPath('./src/test'), (err) => {
+            if (err) {
+                return console.error(err);
+            }
+        });
+    }
 
     copy('src/registerServiceWorker.js', 'src/registerServiceWorker.js');
     // copy index.jsx
